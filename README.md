@@ -23,6 +23,9 @@ In fact, it is so simple that in case you already know Python, you can get start
 Head over to the "getting started" section of the [documentation](https://docs.jesse.trade/docs/getting-started). The 
 documentation is short yet very informative. 
 
+## Google Colab
+[Here](https://github.com/teehanming/jesse/tree/colab) link to colab repo.
+
 ## Example Backtest Results
 
 Check out Jesse's [blog](https://jesse.trade/blog) for tutorials that go through example strategies step by step. 

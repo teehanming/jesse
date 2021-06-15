@@ -1,6 +1,6 @@
 # Jesse meet Colab
-[![Jesse x Colab Template](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/13fp4W6lBvfPsSxuhEnVxCYMGgfDa6egk?usp=sharing)
-[![Github](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1nMFcw7f3yQ8AUwW3Su7xJLq2bmhJ-Ddo?usp=sharing)
+[![Jesse x Colab Template](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/teehanming/jesse/blob/colab/jesse_x_Colab_Template.ipynb)
+[![Github](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/teehanming/jesse/blob/colab/Jesse_x_Colab_Extra_(Github).ipynb)
 
 ## Quick Guide:
 File -> Save a copy in drive.

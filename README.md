@@ -1,4 +1,6 @@
 # Jesse meet Colab
+[![Jesse x Colab Template](https://colab.research.google.com/assets/colab-badge.svg)](https://gist.github.com/teehanming/a10776da1c6fd360c7c72064c8f8d3e2)
+[![Jesse x Colab Template](https://colab.research.google.com/assets/colab-badge.svg)](https://gist.github.com/teehanming/8dde494b78d91b64f62bcd2c36b6c941)
 
 ## Quick Guide:
 File -> Save a copy in drive.

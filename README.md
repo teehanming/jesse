@@ -14,35 +14,21 @@
 Jesse is an advanced crypto trading framework which aims to simplify researching and defining trading strategies.
 
 ## Why Jesse?
-In short, Jesse is more accurate than other solutions, and way more simple.
-In fact, it is so simple that in case you already know Python, you can get started today, in matter of minutes, instead of weeks and months.
+In short, Jesse is more accurate than other solutions, and way more simple. 
+In fact, it is so simple that in case you already know Python, you can get started today, in matter of minutes, instead of weeks and months. 
 
-[Here](https://docs.jesse.trade/docs/) you can read more about why Jesse's features.
+[Here](https://docs.jesse.trade/docs/) you can read more about why Jesse's features. 
 
 ## Getting Started
-Head over to the "getting started" section of the [documentation](https://docs.jesse.trade/docs/getting-started). The
-documentation is short yet very informative.
+Head over to the "getting started" section of the [documentation](https://docs.jesse.trade/docs/getting-started). The 
+documentation is short yet very informative. 
 
-# Google Colab
-## Jesse meet Colab
-[![Jesse x Colab Template](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/teehanming/jesse/blob/colab/jesse_x_Colab_Template.ipynb)
-[![Github](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/teehanming/jesse/blob/colab/Jesse_x_Colab_Extra_(Github).ipynb)
-
-## Quick Guide:
-File -> Save a copy in drive.
-Change runtime type to -> Hardware accelerator: TPU.
-Mount Drive to Colab.
-Fill in the setup details.
-The others are self-explaining.
-Go optimize your bot!
-
-## Train your bot using Google CPU
-### Medium Article : [Here](https://didi27.medium.com/optimize-jesse-trade-on-google-colab-af065885be98)
-
+## Google Colab
+[Here](https://github.com/teehanming/jesse/tree/colab) link to colab repo.
 
 ## Example Backtest Results
 
-Check out Jesse's [blog](https://jesse.trade/blog) for tutorials that go through example strategies step by step.
+Check out Jesse's [blog](https://jesse.trade/blog) for tutorials that go through example strategies step by step. 
 
 Here's an example output for a backtest simulation just to get you excited:
 ```
@@ -101,7 +87,7 @@ This is the very initial release. There's way more. Subscribe to our mailing lis
 I created a [discord server](https://jesse.trade/discord) for Jesse users to discuss algo-trading. It's a warm place to share ideas, and help each other out.
 
 ## How to contribute
-Thank you for your interest in contributing to the project. Before starting to work on a PR, please make sure that it isn't under the "in progress" column in our [Github project page](https://github.com/jesse-ai/jesse/projects/2). In case you want to help but don't know what tasks we need help for, checkout the "todo" column.
+Thank you for your interest in contributing to the project. Before starting to work on a PR, please make sure that it isn't under the "in progress" column in our [Github project page](https://github.com/jesse-ai/jesse/projects/2). In case you want to help but don't know what tasks we need help for, checkout the "todo" column. 
 
 First, you need to install Jesse from the repository instead of PyPi:
 

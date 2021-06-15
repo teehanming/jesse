@@ -1,5 +1,5 @@
 # Jesse meet Colab
-[![Jesse x Colab Template](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/gist/teehanming/1625a2fe9599d1d0237bc4baed71d679/jesse-x-colab-template.ipynb)
+[![Jesse x Colab Template](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/13fp4W6lBvfPsSxuhEnVxCYMGgfDa6egk?usp=sharing)
 [![Github](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1nMFcw7f3yQ8AUwW3Su7xJLq2bmhJ-Ddo?usp=sharing)
 
 ## Quick Guide:

@@ -26,10 +26,7 @@ def candles(candles_array: np.ndarray) -> List[List[str]]:
 
 
 def routes(routes: List[Any]) -> List[Union[List[str], List[Any]]]:
-    array = []
-
-    # header
-    array.append(['exchange', 'symbol', 'timeframe', 'strategy', 'DNA'])
+    array = [['exchange', 'symbol', 'timeframe', 'strategy', 'DNA']]
 
     for r in routes:
         array.append([
@@ -51,7 +48,7 @@ def trades(trades_list: list, daily_balance: list) -> dict:
         starting_balance += store.exchanges.storage[e].starting_assets[jh.app_currency()]
         current_balance += store.exchanges.storage[e].assets[jh.app_currency()]
 
-    if len(trades_list) == 0:
+    if not trades_list:
         return None
 
     df = pd.DataFrame.from_records([t.to_dict() for t in trades_list])
@@ -72,10 +69,10 @@ def trades(trades_list: list, daily_balance: list) -> dict:
     losing_streak = 0 if s_min > 0 else abs(s_min)
 
     s_max = current_streak.max()
-    winning_streak = 0 if s_max < 0 else s_max
+    winning_streak = max(s_max, 0)
 
-    largest_losing_trade = df['PNL'].min()
-    largest_winning_trade = df['PNL'].max()
+    largest_losing_trade = 0 if total_losing_trades == 0 else losing_trades['PNL'].min()
+    largest_winning_trade = 0 if total_winning_trades == 0 else winning_trades['PNL'].max()
 
     win_rate = len(winning_trades) / (len(losing_trades) + len(winning_trades))
     max_R = df['R'].max()
@@ -99,8 +96,8 @@ def trades(trades_list: list, daily_balance: list) -> dict:
     average_holding_period = df['holding_period'].mean()
     average_winning_holding_period = winning_trades['holding_period'].mean()
     average_losing_holding_period = losing_trades['holding_period'].mean()
-    gross_profit = df.loc[df['PNL'] > 0]['PNL'].sum()
-    gross_loss = df.loc[df['PNL'] < 0]['PNL'].sum()
+    gross_profit = winning_trades['PNL'].sum()
+    gross_loss = losing_trades['PNL'].sum()
 
     daily_returns = pd.Series(daily_balance).pct_change(1).values
     max_drawdown = crypto_empyrical.max_drawdown(daily_returns) * 100

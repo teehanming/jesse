@@ -9,7 +9,7 @@ from jesse.config import config
 from jesse.store import store
 
 
-def quantstats_tearsheet(buy_and_hold_returns: pd.Series) -> None:
+def quantstats_tearsheet(buy_and_hold_returns: pd.Series, study_name: str) -> None:
     daily_returns = pd.Series(store.app.daily_balance).pct_change(1).values
 
     start_date = datetime.fromtimestamp(store.app.starting_time / 1000)
@@ -26,9 +26,9 @@ def quantstats_tearsheet(buy_and_hold_returns: pd.Series) -> None:
 
     os.makedirs('./storage/full-reports', exist_ok=True)
 
-    file_path = f'storage/full-reports/{modes[mode][0]}-{str(arrow.utcnow())[0:19]}.html'.replace(":", "-")
+    file_path = f'storage/full-reports/{modes[mode][0]}-{str(arrow.utcnow())[0:19]}-{study_name}.html'.replace(":", "-")
 
-    title = f"{modes[mode][1]} → {arrow.utcnow().strftime('%d %b, %Y %H:%M:%S')}"
+    title = f"{modes[mode][1]} → {arrow.utcnow().strftime('%d %b, %Y %H:%M:%S')} → {study_name}"
 
     try:
         qs.reports.html(returns=returns_time_series, trading_year_days=365, benchmark=buy_and_hold_returns, title=title, output=file_path)

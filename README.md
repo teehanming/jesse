@@ -10,5 +10,5 @@ Fill in the setup details.
 The others are self-explaining.
 Go optimize your bot!
 
-## Train your bot using Google CPU
+## Train your bot using Google TPU
 ### Medium Article : [Here](https://didi27.medium.com/optimize-jesse-trade-on-google-colab-af065885be98)
